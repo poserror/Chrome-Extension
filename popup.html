@@ -1,0 +1,120 @@
+<html>
+  <head>
+      <title>Quick Launch</title>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" type="text/css">
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      <script src="http://code.jquery.com/jquery-1.7.2.js"></script>
+        <style>
+            html, body {
+                font-family: 'Opem Sans' , sans-serif;
+                font-size: 14px;
+                margin: 0;
+                min-height: 180px;
+                padding: 0;
+                width: 384px;
+                background-color: lightgray;
+                box-shadow: 0px 0px 180px gray 0px 0px 180px;
+            }
+            h1 {
+                font-family: 'Menlo', monospace;
+                font-size: 22px;
+                font-weight: 400;
+                margin: 0;
+                color: black;
+            }
+            a:link, a:visited {
+                color: black;
+                outline: 0;
+                text-decoration: none;
+            }
+            img {
+                width: 30px;
+            }
+            .modal-header {
+                align-items: center;
+                border-bottom: 0.5px solid #dadada;
+            }
+            .modal-content {
+                padding: 0 22px;
+            }
+            .modal-icon {
+                border-top: 0.5px solid #dadada;
+                height: 50px;
+                width: 100%;
+            }
+            .logo {
+                padding: 16px;
+            }
+            .logo-icon {
+                vertical-align: text-bottom;
+                margin-right: 12px;
+            }
+            .version {
+                color: #444;
+                font-size: 18px;
+            }
+            .flex-container {
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 22px;
+            }
+            .flex {
+                opacity: 1;
+                transition: opacity 0.2s ease-in-out;
+                width: 120px;
+            }
+            .flex:hover {
+                opacity: 0.4;
+            }
+            .flex .fa {
+                font-size: 40px;
+                color: cadetblue;
+            }
+        </style>
+    </head>
+      <body>
+        <div class="modal-header">
+          <h1 class="logo">
+            <img src="images/logo.png" alt="Quick Launch" class="logo-icon">
+            Quick Launch <span class="version">(1.0.0)</span>
+          </h1>
+        </div>
+      <div class="modal-content">
+          <p>Easily Accessible and Quick Launcher</p>
+<!--
+          <input type="text" id="addLink" placeholder="Paste link to add to quick launch"/>
+          <input id="clickMe" type="button" onclick="addLink();" />
+-->
+      </div>
+      <div class="modal-icons">
+          <div class="flex-container">
+              <div class="flex">
+                  <a href="https://www.youtube.com" target="_blank">					  
+                  <i class="fa fa-youtube"></i>
+                  </a>
+              </div>
+              <div class="flex">
+                  <a href="https://www.instagram.com" target="_blank">
+                  <i class="fa fa-instagram"></i>
+                  </a>
+              </div>
+              <div class="flex">
+                  <a href="https://www.twitter.com" target="_blank">
+                  <i class="fa fa-twitter"></i>
+                  </a>
+              </div>
+              <div class="flex">
+                  <a href="https://www.facebook.com" target="_blank">
+                  <i class="fa fa-facebook"></i>
+                  </a>
+              </div>
+              <div class="flex">
+                  <a href="https://www.github.com" target="_blank">
+                  <i class="fa fa-github"></i>
+                  </a>
+              </div>
+          </div>
+      </div>
+      <script src="popup.js"></script>
+  </body>
+</html>
